@@ -1,0 +1,10 @@
+#containerdiv::-webkit-scrollbar{
+    width: 3px;
+}
+
+#containerdiv::-webkit-scrollbar-thumb{
+
+    background-color: whitesmoke; 
+    border-radius: 10px;
+
+}

@@ -1,0 +1,8 @@
+#maindiv::-webkit-scrollbar{
+    width: 5px;
+}
+
+#maindiv::-webkit-scrollbar-thumb{
+    background: whitesmoke ;
+    border-radius: 20px;
+}

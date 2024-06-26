@@ -1,0 +1,49 @@
+
+input[type = "password"]:hover{
+    border: 1px solid #1F2937;
+}
+input[type = "email"]:hover{
+    border: 1px solid #1F2937;
+}
+
+.signupdiv::-webkit-scrollbar{
+    width: 5px;
+    background: #1F2937;
+    border-radius: 0.375rem;
+}
+.signupdiv::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width:900px){
+    #maindiv{
+        width: 40vw
+    }
+}
+@media (max-width:800px){
+    #maindiv{
+        width: 50vw
+    }
+}
+@media (max-width:700px){
+    #maindiv{
+        width: 50vw
+    }
+}
+@media (max-width:600px){
+    #maindiv{
+        width: 50vw
+    }
+}
+@media (max-width:500px){
+    #maindiv{
+        width: 90vw
+    }
+}
