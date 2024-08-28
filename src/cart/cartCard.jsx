@@ -43,7 +43,7 @@ const CartCard = ({item}) => {
             <h3>
               <a href="#">{item.name}</a>
             </h3>
-            <p className="ml-4">Rs. {item.price}</p>
+            <p className="ml-4">Rs.{item.price}</p>
           </div>
           <p className="mt-1 text-sm text-[whitesmoke] ">{item.category}</p>
         </div>
