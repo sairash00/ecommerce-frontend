@@ -19,7 +19,7 @@ export default function ProductDetail() {
 
     const getProduct = async() => {
         try {
-            const res = await axios.get(`http://localhost:3000/api/v1/getProductDetail/${id}`)
+            const res = await axios.get(`https://ecommerce-backend-three-orpin.vercel.app/api/v1/getProductDetail/${id}`)
             const data = res.data
             setproduct(data.product)
             setLoading(false)
@@ -34,7 +34,7 @@ export default function ProductDetail() {
       e.preventDefault()
       try {
   
-          const response = await axios.post("http://localhost:3000/api/v1/order/addToCart",{id})
+          const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/addToCart",{id})
           const data = response.data
           setMsg(data)
       } catch (error) {
@@ -51,7 +51,7 @@ export default function ProductDetail() {
       const productIds = [id]
       e.preventDefault()
       try {
-          const response = await axios.post("http://localhost:3000/api/v1/order/addOrder",{product: productIds})
+          const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/addOrder",{product: productIds})
           const data = response.data
           if(data.success){
           setMsg(data)

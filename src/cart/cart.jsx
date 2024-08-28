@@ -19,7 +19,7 @@
 
         const getCartItem = async() => {
             try {
-                const response = await axios.get("http://localhost:3000/api/v1/order/getCartDetails")
+                const response = await axios.get("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/getCartDetails")
                 const data = response.data
                 setCart(data.user.cart)
                 setMsg(data.message)
@@ -31,7 +31,7 @@
 
          const placeOrder = async() => {
             try {
-                const response = await axios.post("http://localhost:3000/api/v1/order/addOrder",{product:productIds})
+                const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/addOrder",{product:productIds})
                 const data = response.data
                 if(data.success){
                 setOrder(data.message)

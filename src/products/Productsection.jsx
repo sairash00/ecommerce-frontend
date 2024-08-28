@@ -13,7 +13,7 @@ import axios from 'axios'
    
           const getProducts = async () => {
             try {
-          const response = await axios.get("http://localhost:3000/api/v1/getAllProduct")
+          const response = await axios.get("https://ecommerce-backend-three-orpin.vercel.app/api/v1/getAllProduct")
           const products = response.data.products
           setProducts(products)
 

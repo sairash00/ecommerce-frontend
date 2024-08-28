@@ -61,7 +61,7 @@ export default function AddProduct() {
           formData.append("images", file)
         })
 
-        const response = await axios.post("http://localhost:3000/api/v1/createProduct", formData)
+        const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/createProduct", formData)
         const data = response.data
         
         if(data.success){

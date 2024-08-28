@@ -10,7 +10,7 @@ const ProductCard = ({item}) => {
   const handleDeleteProduct = async (e) => {
     try {
 
-      const response = await axios.post("http://localhost:3000/api/v1/deleteProduct",{id:item._id})
+      const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/deleteProduct",{id:item._id})
       const data = response.data;
       setMsg(data.message);
       if(data.success){

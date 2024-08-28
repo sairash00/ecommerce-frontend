@@ -55,7 +55,7 @@ const Login = () => {
 
     try {
 
-        const response = await axios.post("http://localhost:3000/api/v1/users/loginUser", formData)
+        const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/loginUser", formData)
         const data = response.data
         setMsg(data.message)
         if(data.loggedIn){

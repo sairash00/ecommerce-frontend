@@ -10,7 +10,7 @@ const OrderedCard = ({item,id}) => {
   const handleDelivered = async (e) => {
     try {
 
-      const response = await axios.post("http://localhost:3000/api/v1/order/deliveredOrder",{id})
+      const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/deliveredOrder",{id})
       const data = response.data;
       setMsg(data.message);
       if(data.success){

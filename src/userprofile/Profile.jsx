@@ -12,7 +12,7 @@ const Profile = () => {
 
     const getUserDetail = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/v1/users/getUserInfo')
+            const response = await axios.get('https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/getUserInfo')
             const data = response.data
              setMsg(data.user)
         } catch (error) {

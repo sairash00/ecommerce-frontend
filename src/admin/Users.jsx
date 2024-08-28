@@ -13,7 +13,7 @@ const Users = () => {
   const getUserInfo = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/v1/users/getUserInfo"
+        "https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/getUserInfo"
       );
       const data = response.data;
       if (!data.user.admin) {
@@ -30,7 +30,7 @@ const Users = () => {
   const getAllUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/v1/users/getAllUser"
+        "https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/getAllUser"
       );
       const Users = response.data.users
       setUsers(Users);

@@ -26,7 +26,7 @@ import axios from 'axios'
     const[msg, setMsg] = useState("")
     const Logout = async () => {
       try {
-        const response = await axios.post("http://localhost:3000/api/v1/users/logoutUser")
+        const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/logoutUser")
         const data = response.data
 
         if(data.success){

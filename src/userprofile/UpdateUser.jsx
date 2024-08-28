@@ -74,7 +74,7 @@ export default function UpdateUser({user}) {
         }
 
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/users/updateUser",{details})
+            const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/updateUser",{details})
             const data = response.data
             setMsg(data.message)
             if(data.success){

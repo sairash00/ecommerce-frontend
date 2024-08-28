@@ -9,7 +9,7 @@ const UserCard = ({item}) => {
 
   const makeAdmin = async (e) => {
     try {
-      const res = await axios.post(`http://localhost:3000/api/v1/users/makeAdmin `,{id :item._id})
+      const res = await axios.post(`https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/makeAdmin `,{id :item._id})
       setMsg(res.data.message)
       if(success){
       navigate("/admin/users")

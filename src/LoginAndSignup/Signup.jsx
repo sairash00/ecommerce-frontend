@@ -61,7 +61,7 @@ const Signup = () => {
     }
 
     try {
-          const response = await axios.post( "http://localhost:3000/api/v1/users/registerUser",formData)
+          const response = await axios.post( "https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/registerUser",formData)
           const data = response.data
           setData(data.message)
           console.log(data)

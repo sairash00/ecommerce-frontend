@@ -18,7 +18,7 @@ export default function Order({ show, onClose }) {
   const getOrders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/v1/order/getOrder"
+        "https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/getOrder"
       );
      const data = res.data
      setOrders(data.order)

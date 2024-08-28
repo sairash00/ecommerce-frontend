@@ -11,7 +11,7 @@ const AdminPanel = () => {
   const getUserInfo = async () => {
   try {
 
-    const response = await axios.get("http://localhost:3000/api/v1/users/getUserInfo")
+    const response = await axios.get("https://ecommerce-backend-three-orpin.vercel.app/api/v1/users/getUserInfo")
     const data = response.data
     console.log(data)
     if(!data.user.admin){

@@ -13,7 +13,7 @@ const ProductCard = ({image, name, price,id}) => {
   const addToCart = async (e) => {
     try {
 
-        const response = await axios.post("http://localhost:3000/api/v1/order/addToCart",{id})
+        const response = await axios.post("https://ecommerce-backend-three-orpin.vercel.app/api/v1/order/addToCart",{id})
         const data = response.data
 
         if(data.success){
